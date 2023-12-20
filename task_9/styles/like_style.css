@@ -1,0 +1,14 @@
+body {
+    overflow: hidden;
+    background: #7a7878;
+    height: 100vh;
+}
+
+span {
+    position: absolute;
+    background: url(../source/heart.png);
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}

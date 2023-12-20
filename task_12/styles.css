@@ -1,0 +1,118 @@
+/* ::-webkit-scrollbar{
+  width: 3px;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.cart, .container {
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: linear-gradient(30deg,#d23c3c, #d2853c, #fce919);
+  border-radius: 50px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.544);
+  border-right: 1px solid rgba(255, 255, 255, 0.708);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.614);  
+  color: rgb(36, 8, 121);
+}
+.cart-items{
+  margin-right: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+input{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(237, 206, 7, 0.1);
+}
+
+button {
+  font-weight: 700;
+  margin: 0px auto;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background: linear-gradient(45deg,#73d23c, #3cd294, #19b0fc);
+}
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: linear-gradient(30deg,#d23c3c, #d2853c, #fce919);
+  border-radius: 5px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.544);
+  border-right: 1px solid rgba(255, 255, 255, 0.708);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.614);  
+  color: rgb(95, 10, 175);
+  font-weight: 600;
+}
+.notification-container img{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.notification-list{
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.notification-list p{
+
+  cursor: pointer;
+}
+.list-container {
+  width: 30%;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: linear-gradient(30deg,#d23c3c, #d2853c, #fce919);
+  border-radius: 5px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.544);
+  border-right: 1px solid rgba(255, 255, 255, 0.708);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.614);  
+  color: rgb(34, 1, 64);
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#list li {
+  margin-bottom: 10px;
+}
+
+#notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  background: rgba(236, 7, 7, 0.7);
+}

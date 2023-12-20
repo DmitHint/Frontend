@@ -1,0 +1,68 @@
+#quotes_of_the_day {
+    background-color: grey;
+    color: white;
+    border: 3px solid green;
+    border-radius: 20px;
+    border-style: dashed;
+}
+
+h1,
+h2,
+h3,
+dt,
+li
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+#main_info {
+    background-color: aliceblue;
+}
+
+#contacts {
+    background-color: honeydew;
+}
+
+aside {
+    width: 15%;
+    height: 3000px;
+
+    float: right;
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+ol {
+    page: "1";
+    caret: "1";
+}
+
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:active {
+    color: blue;
+}
+
+ul li::marker {
+    color: red;
+}
+
+.with-indent {
+    text-indent: 25px;
+}
+
+.with-indent+dl {
+    text-indent: 25px;
+}

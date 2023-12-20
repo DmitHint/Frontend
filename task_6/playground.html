@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Стили для кнопки */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Стили для блока с неупорядоченным списком */
+        .button:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: black;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        /* Стили для элементов списка */
+        .dropdown li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Кнопка с блоком с неупорядоченным списком -->
+    <div class="button">
+        Наведите на меня
+        <div class="dropdown">
+            <ul>
+                <li>Элемент 1</li>
+                <li>Элемент 2</li>
+                <li>Элемент 3</li>
+                <!-- Добавьте нужное количество элементов -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.parallax-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.parallax-bg {
+  background-image: url("../images/clouds.png");
+  background-size: contain;
+  height: 300%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.content {
+  padding: 20px;
+  z-index: 1;
+}
+
+h1,
+p {
+  color: #fff;
+}

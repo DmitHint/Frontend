@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Динамическое обновление при прокрутке</title>
+    <style>
+      body {
+        height: 1000vh;
+      }
+
+      #content {
+        padding: 20px;
+      }
+
+      .additional-content {
+        display: none;
+        margin-top: 20px;
+      }
+
+      * {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <p>Начальное содержимое страницы.</p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let triggerPoint = 50;
+
+        function handleScroll() {
+          const scrollPosition = window.scrollY;
+
+          const windowHeight = window.innerHeight;
+
+          const documentHeight = document.body.offsetHeight;
+
+          console.log(scrollPosition + "   " + triggerPoint);
+
+          if (scrollPosition > triggerPoint) {
+            triggerPoint += 100;
+            loadAdditionalContent();
+          }
+        }
+
+        function loadAdditionalContent() {
+          const content = document.querySelector("#content");
+          const additional = document.createElement("div");
+          additional.classList.add(".additional-content");
+          additional.innerHTML = `
+                <p>Дополнительный контент</p>
+          `;
+          content.appendChild(additional);
+        }
+
+        window.addEventListener("scroll", handleScroll);
+      });
+    </script>
+  </body>
+</html>

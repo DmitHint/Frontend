@@ -1,0 +1,57 @@
+[
+  {
+    "id": 0,
+    "cover": "../source/book_pics/clean_code.png",
+    "title": "Чистый код",
+    "author": "Роберт Мартин",
+    "rating": {
+      "value": 4.0,
+      "votes": 1
+    },
+    "price": 599
+  },
+  {
+    "id": 1,
+    "cover": "../source/book_pics/grokking_algorithms.png",
+    "title": "Грокаем алгоритмы",
+    "author": "Адитья Бхаргава",
+    "rating": {
+      "value": 4.6,
+      "votes": 11
+    },
+    "price": 599
+  },
+  {
+    "id": 2,
+    "cover": "../source/book_pics/operating_system.png",
+    "title": "Современные операционные системы. 4-е издание",
+    "author": "Эндрю Таненбаум, Херберт Бос",
+    "rating": {
+      "value": 3.9,
+      "votes": 4
+    },
+    "price": 699
+  },
+  {
+    "id": 3,
+    "cover": "../source/book_pics/go.png",
+    "title": "Go. Идиомы и паттерны проектирования",
+    "author": "Джон Боднер",
+    "rating": {
+      "value": 4.2,
+      "votes": 2
+    },
+    "price": 699
+  },
+  {
+    "id": 4,
+    "cover": "../source/book_pics/sql.png",
+    "title": "SQL. Быстрое погружение",
+    "author": "Уолтер Шилдс",
+    "rating": {
+      "value": 4.3,
+      "votes": 4
+    },
+    "price": 599
+  }
+]
